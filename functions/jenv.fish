@@ -7,7 +7,7 @@ function jenv
   end
 
   switch "$cmd"
-    case enable-plugin rehash shell shell-options
+    case enable-plugin rehash shell shell-options maven
         set script (jenv "sh-$cmd" "$arg")
         eval $script
     case '*'
