@@ -1,5 +1,3 @@
-set PATH $HOME/.jenv/shims $PATH
-command jenv rehash 2>/dev/null
 function jenv
   set cmd $argv[1]
   set arg ""
