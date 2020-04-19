@@ -16,3 +16,5 @@ set -x PATH "$jenv_root/shims" $PATH
 set -x JENV_SHELL fish
 
 command mkdir -p "$jenv_root/"{shims,versions}
+
+status --is-interactive; and source (jenv init -|psub)
